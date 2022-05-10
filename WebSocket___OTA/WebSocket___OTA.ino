@@ -42,9 +42,9 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
 
 }
 
-
-
+/* OTA */
 #ifndef STASSID
+
 #define STASSID "NETWORK-ID"
 #define STAPSK  "PASSWORD"
 
@@ -118,9 +118,4 @@ void loop() {
 
   webSocket.sendTXT(0, JSONtxt);
   cont++;
-
-         
-
- 
-
 }
